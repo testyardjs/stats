@@ -1,5 +1,3 @@
-// x
-
 interface Result {
   entries: Record<string, number>
   integers: number[]
