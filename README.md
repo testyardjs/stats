@@ -1,6 +1,4 @@
-# grandom
-
-Versatile and great random data generator.
+# @testyard/stats
 
 ## License
 
@@ -9,4 +7,4 @@ Versatile and great random data generator.
 <!--- References =============================================================================== -->
 
 <!--- URLs -->
-[url-license-doc]: https://github.com/grandom/grandom-js/blob/main/LICENSE
+[url-license-doc]: https://github.com/testyardjs/stats/blob/main/LICENSE
