@@ -1,0 +1,47 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  # ============================================================================
+
+  CI:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+        cache: 'npm'
+
+    # --------------------------------------------------------------------------
+
+    - name: init
+      run: npm ci
+
+    - name: lint
+      run: npm run lint
+
+    - name: test
+      run: npm test
+
+    # - name: test
+    #   run: npm test -- --coverage
+
+    # - name: upload coverage
+    #   uses: codecov/codecov-action@v3
+
+    - name: prepare
+      run: npm run prep
+
+    - name: release
+      run: npx --no-install semantic-release
+
+    # --------------------------------------------------------------------------
+
+    env:
+      GH_TOKEN:  ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
