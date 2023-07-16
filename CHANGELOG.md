@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/testyardjs/stats/compare/v1.1.0...v1.2.0) (2023-07-16)
+
+
+### Features
+
+* add default stats iteration length ([e6d9d49](https://github.com/testyardjs/stats/commit/e6d9d49b6d3feffaca726f287ac49084b45ec860))
+
 # [1.1.0](https://github.com/testyardjs/stats/compare/v1.0.0...v1.1.0) (2023-07-15)
 
 
