@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/testyardjs/stats/compare/v1.2.0...v1.3.0) (2023-07-18)
+
+
+### Features
+
+* add character stats ([7603c3d](https://github.com/testyardjs/stats/commit/7603c3db1a7e34c21c3ba1bbc678abfbdc6d2dbd))
+
 # [1.2.0](https://github.com/testyardjs/stats/compare/v1.1.0...v1.2.0) (2023-07-16)
 
 
