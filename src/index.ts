@@ -1,5 +1,7 @@
 /**
  * Default iteration length for gathering stats data.
+ * This ***(1 million iterations by default)*** should be enough
+ * in most stats gathering cases.
  *
  * @default 1000000
  */
