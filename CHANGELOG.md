@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/testyardjs/stats/compare/v1.4.0...v1.4.1) (2023-07-19)
+
+
+### Bug Fixes
+
+* add missing root export for string stats ([e6d382d](https://github.com/testyardjs/stats/commit/e6d382dfc71d3dd235da19e532bc82aa37ca0c80))
+
 # [1.4.0](https://github.com/testyardjs/stats/compare/v1.3.0...v1.4.0) (2023-07-19)
 
 
