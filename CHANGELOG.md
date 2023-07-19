@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/testyardjs/stats/compare/v1.3.0...v1.4.0) (2023-07-19)
+
+
+### Features
+
+* add string stats ([03fa796](https://github.com/testyardjs/stats/commit/03fa7967c0010e47f9609f37bb2b33f3a92b0df9))
+
 # [1.3.0](https://github.com/testyardjs/stats/compare/v1.2.0...v1.3.0) (2023-07-18)
 
 
