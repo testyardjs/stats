@@ -1,7 +1,7 @@
 interface Result {
   entries: Record<string, number>
   characters: string[]
-  numEntries: number
+  numCharacters: number
   lowestValue: number
   highestValue: number
   averageValue: number
@@ -11,7 +11,7 @@ interface Result {
 export default class CharacterStats {
   private _result: Record<string, number> = {}
 
-  private _numEntries = 0
+  private _numCharacters = 0
   private _lowestValue = NaN
   private _highestValue = NaN
   private _sumValue = NaN
@@ -75,11 +75,11 @@ export default class CharacterStats {
             .sort()
         }
       },
-      numEntries: {
+      numCharacters: {
         get: () => {
           this._summarize()
 
-          return this._numEntries
+          return this._numCharacters
         }
       },
       lowestValue: {
@@ -100,7 +100,7 @@ export default class CharacterStats {
         get: () => {
           this._summarize()
 
-          return this._sumValue / this._numEntries
+          return this._sumValue / this._numCharacters
         }
       }
     }
@@ -116,7 +116,7 @@ export default class CharacterStats {
         this._result[key] = value / this._numAdded
       }
 
-      this._numEntries = Object.keys(this._result).length
+      this._numCharacters = Object.keys(this._result).length
 
       for (const value of Object.values(this._result)) {
         // eslint-disable-next-line no-self-compare

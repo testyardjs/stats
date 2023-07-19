@@ -11,7 +11,7 @@ describe('CharacterStats', () => {
     add('c')
     add('c')
 
-    expect(result.numEntries).toBe(3)
+    expect(result.numCharacters).toBe(3)
     expect(result.characters).toEqual(['a', 'b', 'c'])
 
     expect(result.lowestValue).toBe(0.16666666666666666)
@@ -31,7 +31,7 @@ describe('CharacterStats', () => {
     add(['c', 'c', 'c'])
     add(['d', 'dd', 'ddd'])
 
-    expect(result.numEntries).toBe(4)
+    expect(result.numCharacters).toBe(4)
     expect(result.characters).toEqual(['a', 'b', 'c', 'd'])
 
     expect(result.lowestValue).toBe(0.08333333333333333)
